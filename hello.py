@@ -6,11 +6,9 @@ app = Flask(__name__)
 
 def my_reg():
     try:
-        result = requests.get('http://169.254.169.254/latest/dynamic/instance-identity/document')
+        result = requests.get('http://169.254.169.254/latest/meta-data/placement/availability-zone')
         if result.status_code == 200:
-            my_obj = json.loads(result.content)
-            if my_obj and my_obj.get("region"):
-                return "<br><br> I'm at " + my_obj.get("region")
+            return "<br><br> I'm at " + result.content
     except:
         return ''
     
