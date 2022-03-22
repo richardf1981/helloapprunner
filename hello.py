@@ -8,7 +8,7 @@ def my_reg():
     try:
         result = requests.get('http://169.254.169.254/latest/meta-data/placement/availability-zone')
         if result.status_code == 200:
-            return "<br><br> I'm at " + result.content
+            return "<br><br> I'm in " + result.content
     except:
         return ''
     
