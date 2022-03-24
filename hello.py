@@ -15,6 +15,7 @@ def my_reg():
 
 @app.route('/')
 def index():
+    'a
     return 'Hello AWS App Runner - version 1' + my_reg()
 
 if __name__ == "__main__":
