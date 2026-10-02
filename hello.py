@@ -4,6 +4,9 @@ import requests
 
 app = Flask(__name__)
 
+AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
+AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+
 def my_reg():
     try:
         result = requests.get('http://169.254.169.254/latest/meta-data/placement/availability-zone')
