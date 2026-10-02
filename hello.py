@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 
 AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
-AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+AWS_SECRET_KEY = "aB3xK9mPqR7vL2nT8wZ5yC1dF4gH6jK0"
 
 def my_reg():
     try:
