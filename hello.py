@@ -9,6 +9,12 @@ AWS_SECRET_KEY = "aB3xK9mPqR7vL2nT8wZ5yC1dF4gH6jK0"
 DB_PASSWORD = "hunter2"
 
 def my_reg():
+    variable_a = 2
+    
+    if variable_a == 1:
+        if variable_b == 3:
+            pass
+            
     try:
         result = requests.get('http://169.254.169.254/latest/meta-data/placement/availability-zone')
         if result.status_code == 200:
