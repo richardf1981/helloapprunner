@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
 AWS_SECRET_KEY = "aB3xK9mPqR7vL2nT8wZ5yC1dF4gH6jK0"
+DB_PASSWORD = "hunter2"
 
 def my_reg():
     try:
